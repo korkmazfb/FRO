@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    background: #EFFFFD;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.card--buy{
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+
+}
+
+.card--buy img{
+    height:70% ;
+    width: 100%;
+
+}
+
+.card--buy p{
+    height: 20%;
+    font-size: 75% ;
+    gap: 2rem;
+
+}
+
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding:4rem ;
+   
+
+}
+
+.card--slider > h2{
+    font-size: 400%;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: linear-gradient(to right, #0099f7, #f11712); 
+    
+}
+
+.card--slider > input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to right, #0099f7, #f11712); 
+    cursor: pointer;
+
+}
+  
+.card--slider > input::-moz-range-thumb {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to right, #0099f7, #f11712); 
+    cursor: pointer;
+}
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.timertext{
+    font-size: 200%;
+}
+
+
+.button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.button--start{
+    background: #00C897;
+    
+}
+
+.button--stop{
+    background: #890F0D;
+}
+
+.button--reset{
+    background: #5463FF;
+}
